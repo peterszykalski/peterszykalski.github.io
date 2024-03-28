@@ -2,22 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://peterszykalski.github.io/index.html</loc>
-    <lastmod>2024-03-28T21:53:55.725Z</lastmod>
-  </url>
-  <url>
-    <loc>https://peterszykalski.github.io/posts/post-with-code/index.html</loc>
-    <lastmod>2024-03-28T21:53:55.725Z</lastmod>
-  </url>
-  <url>
-    <loc>https://peterszykalski.github.io/posts/my-first-post/index.html</loc>
-    <lastmod>2024-03-28T21:53:55.725Z</lastmod>
+    <lastmod>2024-03-28T22:00:15.637Z</lastmod>
   </url>
   <url>
     <loc>https://peterszykalski.github.io/posts/welcome/index.html</loc>
-    <lastmod>2024-03-28T21:53:55.725Z</lastmod>
+    <lastmod>2024-03-28T22:00:15.637Z</lastmod>
+  </url>
+  <url>
+    <loc>https://peterszykalski.github.io/posts/my-first-post/index.html</loc>
+    <lastmod>2024-03-28T22:00:15.637Z</lastmod>
   </url>
   <url>
     <loc>https://peterszykalski.github.io/about.html</loc>
-    <lastmod>2024-03-28T21:53:55.725Z</lastmod>
+    <lastmod>2024-03-28T22:00:15.637Z</lastmod>
   </url>
 </urlset>

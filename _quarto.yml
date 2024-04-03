@@ -8,9 +8,11 @@ website:
       - about.qmd
       - index.qmd
       - icon: github
-        href: https://github.com/
-      - icon: twitter
-        href: https://twitter.com
+        href: https://github.com/peterszykalski
+      - icon: linkedin
+        href: https://www.linkedin.com/in/peterszykalski/
+#      - icon: mastodon
+#        href: https://mastodon.com
 format:
   html:
     theme: cosmo

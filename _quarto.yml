@@ -15,8 +15,8 @@ website:
 #        href: https://mastodon.com
 format:
   html:
-    theme: cosmo
-    css: styles.css
-
+    theme:
+      - cosmo
+      - custom.scss
 
 

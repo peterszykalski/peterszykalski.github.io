@@ -4,16 +4,17 @@ image: profile.jpg
 about:
   template: jolla
   links:
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com
+#    - icon: mastodon
+#      text: Mastodon
+#      href: https://mastodon.com
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com
+      href: https://www.linkedin.com/in/peterszykalski/
     - icon: github
       text: Github
-      href: https://github.com
+      href: https://github.com/peterszykalski
 
 ---
 
-About this blog
+Hi I'm Peter Szykalski.<br />This blog aims to be the showcase of my interests, so not just technological but also other shades of my live. (...) Time will be critical in what is presented here so don't be discouraged right at the begining. Visit this space from time to time - Cheers.
+

@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Hi I’m Peter Szykalski.This blog aims to be the showcase of my interests, so not just technological but also other shades of my live. (…) Time will be critical in what is presented here so don’t be discouraged right at the begining. Visit this space from time to time - Cheers."
+  },
+  {
+    "objectID": "posts/my-first-post/index.html",
+    "href": "posts/my-first-post/index.html",
+    "title": "My first post",
+    "section": "",
+    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "polymorphic_blog",
@@ -12,19 +26,5 @@
     "title": "Welcome To My Blog",
     "section": "",
     "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
-  },
-  {
-    "objectID": "posts/my-first-post/index.html",
-    "href": "posts/my-first-post/index.html",
-    "title": "My first post",
-    "section": "",
-    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "Hi I’m Peter Szykalski.This blog aims to be the showcase of my interests, so not just technological but also other shades of my live. (…) Time will be critical in what is presented here so don’t be discouraged right at the begining. Visit this space from time to time - Cheers."
   }
 ]

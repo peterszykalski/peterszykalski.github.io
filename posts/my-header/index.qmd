@@ -1,12 +1,12 @@
 ---
-title: "Welcome To My Blog"
-author: "Tristan O'Malley"
+title: "Guernica as header"
+author: "Peter Szykalski"
 date: "2024-03-25"
-categories: [news]
+categories: [why]
 ---
 
 This is the first post in a Quarto blog. Welcome!
 
-![](thumbnail.jpg)
+![](Pablo_Guernica.jpg)
 
 Since this post doesn't specify an explicit `image`, the first image in the post will be used in the listing page of posts.

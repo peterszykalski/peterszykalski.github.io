@@ -2,9 +2,11 @@
 title: "from Support to Development"
 author: "Peter Szykalski"
 date: "2024-02-28"
-categories: [code, analysis]
+categories: [callOUT]
 image: "GE_Chicago.jpg"
 ---
+
+![](GE_Chicago.jpg)
 
 This is a post with executable code.
 

@@ -4,12 +4,12 @@
     "href": "index.html",
     "title": "polymorphic_blog",
     "section": "",
-    "text": "Welcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nMar 25, 2024\n\n\nTristan O’Malley\n\n\n\n\n\n\n\n\n\n\n\n\nfrom Support to Development\n\n\n\n\n\n\ncallOUT\n\n\n\n\n\n\n\n\n\nFeb 28, 2024\n\n\nPeter Szykalski\n\n\n\n\n\n\nNo matching items"
+    "text": "Guernica as header\n\n\n\n\n\n\nwhy\n\n\n\n\n\n\n\n\n\nMar 25, 2024\n\n\nPeter Szykalski\n\n\n\n\n\n\n\n\n\n\n\n\nfrom Support to Development\n\n\n\n\n\n\ncallOUT\n\n\n\n\n\n\n\n\n\nFeb 28, 2024\n\n\nPeter Szykalski\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
+    "objectID": "posts/my-header/index.html",
+    "href": "posts/my-header/index.html",
+    "title": "Guernica as header",
     "section": "",
     "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
   },

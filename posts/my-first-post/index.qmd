@@ -14,7 +14,7 @@ W istotny sposób zmienił się krajobraz technologiczny od czasu gdy powstało 
 * AWS announces general availability of the AWS SDK for Rust 
 * NSA memory save roadmap
 
-```{code}
+```
 Programming languages such as C and C++ are examples of memory unsafe programming
 languages that can lead to memory unsafe code and are still among the most widely used
 languages today.

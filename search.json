@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "polymorphic_blog",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "Guernica as header\n\n\n\n\n\n\nwhy\n\n\n\n\n\n\n\n\n\nMar 25, 2024\n\n\nPeter Szykalski\n\n\n\n\n\n\n\n\n\n\n\n\nfrom Support to Development\n\n\n\n\n\n\ncallOUT\n\n\n\n\n\n\n\n\n\nFeb 28, 2024\n\n\nPeter Szykalski\n\n\n\n\n\n\nNo matching items"
+    "text": "Hi I’m Peter Szykalski.This blog aims to be the showcase of my interests, so not just technological but also other shades of my live. (…) Time will be critical in what is presented here so don’t be discouraged right at the begining. Visit this space from time to time - Cheers."
   },
   {
     "objectID": "posts/my-header/index.html",
@@ -14,17 +14,17 @@
     "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "polymorphic_blog",
+    "section": "",
+    "text": "Guernica as header\n\n\n\n\n\n\nwhy\n\n\n\n\n\n\n\n\n\nMar 25, 2024\n\n\nPeter Szykalski\n\n\n\n\n\n\n\n\n\n\n\n\nfrom Support to Development\n\n\n\n\n\n\ncallOUT\n\n\n\n\n\n\n\n\n\nFeb 28, 2024\n\n\nPeter Szykalski\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "posts/my-first-post/index.html",
     "href": "posts/my-first-post/index.html",
     "title": "from Support to Development",
     "section": "",
-    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "Hi I’m Peter Szykalski.This blog aims to be the showcase of my interests, so not just technological but also other shades of my live. (…) Time will be critical in what is presented here so don’t be discouraged right at the begining. Visit this space from time to time - Cheers."
+    "text": "W istotny sposób zmienił się krajobraz technologiczny od czasu gdy powstało to pamiątkowe zdjęcie. Okoliczności to siedziba GE Transportation, 7 piętro wieżowca 500 W Monroe St, Chicago. Moja firma jako polski podwykonawca wdrażała komponent IoT dla platformy o marketingowej nazwie Predix. Ten z kolei Predix był częścią większego projektu EdgeLINC™ autonomizującego sterowanie oraz odczyt stanu większości parametrów eksploatacyjnych Lokomowty Cargo. Był to rodzaj czarnej skrzynki ,która rejestrowała status lokomotywy oraz komunikowała się z Chmurą. Główny stack technologiczny stanowiła Java na edge'u oraz na cloud backendzie ulubione środowisko dużych corpo. Dziś trudno powiedzieć co pozostało z tego projektu produkcyjnie, ale niewątpliwie była to okazja, żeby live przekonać się o wadach i zaletach różnych decyzji architektonicznych w tak dużym projekcie. Kontenery pozostały wówczas to był jeszcze Docker_Swarm dziś powszechny jest Kubernetes. Kafka - message broker zdaje się, że nadal w wielu systemach dużych firm to dominujące rozwiązanie. Z punktu widzenia roli jaką wówczas pełniłem Support Enginer'a to było cenne doświadczenie. Utrzymanie \"operacyjne\" cykli wydań od Zespołu Developerskiego w Katowicach po instalację i uruchomienie kolejnych wersji na środowisku u Klienta wraz wieloma komponentami 3th-party stanowiło wyzwanie. Obecnie po tych kilku latach od tego projektu oraz po kilku kolejnych równie intersujących projektach gównie z branży IIoT narast chęć bardziej kreatywnego wypływania na powierzone obowiązki - a więc \"from Support to DEVelopment idąc dalej Rust Development. Dlaczego?\nPowodów jest wiele dlaczego warto przygodę z językiem Rust zacząć. Oto kilka z nich być może najbardziej spektakularnych:\n\n * Linux introduces support for rust\n * AWS announces general availability of the AWS SDK for Rust \n * NSA memory save roadmap\nProgramming languages such as C and C++ are examples of memory unsafe programming\nlanguages that can lead to memory unsafe code and are still among the most widely used\nlanguages today."
   }
 ]

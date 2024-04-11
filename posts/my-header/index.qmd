@@ -14,7 +14,7 @@ Anyway, the painting pictures the Spanish Civil War from the beginning of the 20
 
 Just for fun I put the Guernica on Linkedin header. This raised my question, Is this legal? As it turns out linkedIN, checked the copyright under the hood and the header was not disabled. But for double check, I asked the chat GPT. Here is the answer:
 
-```{markdown}
+```{r}
 As of my last update in January 2022, "Guernica" by Pablo Picasso is in the public domain, which means it is not subject to copyright restrictions. Therefore, you can typically display it on a private website without legal issues.
 ```
 

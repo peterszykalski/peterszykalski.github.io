@@ -5,8 +5,6 @@ date: "2024-02-28"
 categories: [why]
 ---
 
-This is the first post in a Quarto blog. Welcome!
-
 ![](Pablo_Guernica.jpg)
 
 I always make lough that Pablo knew sth more about coming digital IT revolution hence he invented the Cubism. Here in Guernica from 1937, Cubism sought to depict subjects from multiple viewpoints simultaneously, breaking them down into geometric shapes and fragments. While "Guernica" does bear elements of Cubism, it also incorporates elements of Surrealism due to its dreamlike and symbolic imagery.

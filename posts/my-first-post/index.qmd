@@ -14,9 +14,9 @@ W istotny sposób zmienił się krajobraz technologiczny od czasu gdy powstało 
 ### migration to development
 Obecnie po tych kilku latach od tego projektu oraz po kilku kolejnych równie intersujących projektach gównie z branży IIoT narast chęć bardziej kreatywnego wypływania na powierzone obowiązki - a więc "from Support to DEVelopment" idąc dalej "to Rust Development". Dlaczego? Powodów jest wiele dlaczego warto przygodę z językiem Rust zacząć. Oto kilka z nich być może najbardziej spektakularnych:
 
-* Linux introduces support for rust
-* AWS announces general availability of the AWS SDK for Rust 
-* NSA memory save roadmap
+* [Linux introduces support for rust](https://en.wikipedia.org/wiki/Rust_for_Linux)
+* [AWS announces general availability of the AWS SDK for Rust](https://aws.amazon.com/about-aws/whats-new/2023/11/aws-sdk-rust/) 
+* [NSA memory save roadmap](https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/3608324/us-and-international-partners-issue-recommendations-to-secure-software-products/)
 
 ```
 Programming languages such as C and C++ are examples of memory unsafe programming

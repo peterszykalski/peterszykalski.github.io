@@ -10,6 +10,7 @@ categories: [why]
 ### Guernica by Pablo Picasso
 I always make lough that Pablo knew sth more about coming digital IT revolution hence he invented the Cubism. Here in Guernica from 1937, Cubism sought to depict subjects from multiple viewpoints simultaneously, breaking them down into geometric shapes and fragments. While "Guernica" does bear elements of Cubism, it also incorporates elements of Surrealism due to its dreamlike and symbolic imagery.
 
+Anyway, the painting pictures the Spanish Civil War from the beginning of the 20th-century, which I didn't know after I saw this picture for the first time. But right away this piece of art spoke to me as a metaphor for nowadays. Electricity was entering Europe this time, so the lightbulb was on the canvas - the light of progress. Today with the .ai hype is similar ;). Although in many places we live in peace, everybody fights their own battle with surrounding circumstances, weaknesses, and so on. 
 
 :::{.callout-tip}
 * [more on Guernica](https://www.pablopicasso.org/guernica.jsp)

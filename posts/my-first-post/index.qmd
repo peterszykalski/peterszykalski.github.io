@@ -9,7 +9,7 @@ image: "GE_Chicago.jpg"
 ![](GE_Chicago.jpg)
 
 ### landscape back then
-W istotny sposób zmienił się krajobraz technologiczny od czasu gdy powstało to pamiątkowe zdjęcie. Okoliczności to siedziba GE Transportation, 7 piętro wieżowca 500 W Monroe St, Chicago. Moja firma jako polski podwykonawca wdrażała komponent IoT dla platformy o marketingowej nazwie Predix. Ten z kolei Predix był częścią większego projektu EdgeLINC™ autonomizującego sterowanie oraz odczyt stanu większości parametrów eksploatacyjnych Lokomowty Cargo. Był to rodzaj czarnej skrzynki ,która rejestrowała status lokomotywy oraz komunikowała się z Chmurą. Główny stack technologiczny stanowiła Java na edge'u oraz na cloud backendzie ulubione środowisko dużych corpo. Dziś trudno powiedzieć co pozostało z tego projektu produkcyjnie, ale niewątpliwie była to okazja, żeby live przekonać się o wadach i zaletach różnych decyzji architektonicznych w tak dużym projekcie. Kontenery? pozostały, wówczas to był jeszcze Docker_Swarm dziś powszechny jest Kubernetes. Kafka - message broker zdaje się, że nadal w wielu systemach dużych firm to dominujące rozwiązanie. Z punktu widzenia roli jaką wówczas pełniłem, Support Enginer'a to było cenne doświadczenie. Utrzymanie "operacyjne" cykli wydań od Zespołu Developerskiego w Katowicach po instalację i uruchomienie kolejnych wersji na środowisku u Klienta wraz wieloma komponentami 3th-party stanowiło wyzwanie. 
+W istotny sposób zmienił się krajobraz technologiczny od czasu gdy powstało to pamiątkowe zdjęcie. Okoliczności to siedziba GE Transportation, 7 piętro wieżowca 500 W Monroe St, Chicago. Moja firma jako polski podwykonawca wdrażała komponent IoT dla platformy o marketingowej nazwie [Predix](https://www.ge.com/digital/documentation/edge-software/c_what_is_predix_platform.html). Ten z kolei Predix był częścią większego projektu [EdgeLINC™](https://www.wabteccorp.com/digital-intelligence/electronics-and-components/edgelinc) autonomizującego sterowanie oraz odczyt stanu większości parametrów eksploatacyjnych Lokomowty Cargo. Był to rodzaj czarnej skrzynki ,która rejestrowała status lokomotywy oraz komunikowała się z Chmurą. Główny stack technologiczny stanowiła Java na edge'u oraz na cloud backendzie ulubione środowisko dużych corpo. Dziś trudno powiedzieć co pozostało z tego projektu produkcyjnie, ale niewątpliwie była to okazja, żeby live przekonać się o wadach i zaletach różnych decyzji architektonicznych w tak dużym projekcie. Kontenery? pozostały, wówczas to był jeszcze Docker_Swarm dziś powszechny jest Kubernetes. Kafka - message broker zdaje się, że nadal w wielu systemach dużych firm to dominujące rozwiązanie. Z punktu widzenia roli jaką wówczas pełniłem, Support Enginer'a to było cenne doświadczenie. Utrzymanie "operacyjne" cykli wydań od Zespołu Developerskiego w Katowicach po instalację i uruchomienie kolejnych wersji na środowisku u Klienta wraz wieloma komponentami 3th-party stanowiło wyzwanie. 
 
 ### migration to development
 Obecnie po tych kilku latach od tego projektu oraz po kilku kolejnych równie intersujących projektach gównie z branży IIoT narast chęć bardziej kreatywnego wypływania na powierzone obowiązki - a więc "from Support to DEVelopment" idąc dalej "to Rust Development". Dlaczego? Powodów jest wiele dlaczego warto przygodę z językiem Rust zacząć. Oto kilka z nich być może najbardziej spektakularnych:
@@ -18,8 +18,9 @@ Obecnie po tych kilku latach od tego projektu oraz po kilku kolejnych równie in
 * [AWS announces general availability of the AWS SDK for Rust](https://aws.amazon.com/about-aws/whats-new/2023/11/aws-sdk-rust/) 
 * [NSA memory save roadmap](https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/3608324/us-and-international-partners-issue-recommendations-to-secure-software-products/)
 
-```
+:::{.callout-note}
 Programming languages such as C and C++ are examples of memory unsafe programming
 languages that can lead to memory unsafe code and are still among the most widely used
 languages today.
-```
+:::
+

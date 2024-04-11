@@ -13,10 +13,8 @@ I always make lough that Pablo knew sth more about coming digital IT revolution 
 Anyway, the painting pictures the Spanish Civil War from the beginning of the 20th-century, which I didn't know after I saw this picture for the first time. But right away this piece of art spoke to me as a metaphor for nowadays. Electricity was entering Europe this time, so the lightbulb was on the canvas - the light of progress. Today with the .ai hype is similar ;). Although in many places we live in peace, everybody fights their own battle with surrounding circumstances, weaknesses, and so on. 
 
 Just for fun I put the Guernica on Linkedin header. This raised my question, Is this legal? As it turns out linkedIN, checked the copyright under the hood and the header was not disabled. But for double check, I asked the chat GPT. Here is the answer:
-
-```{r}
 As of my last update in January 2022, "Guernica" by Pablo Picasso is in the public domain, which means it is not subject to copyright restrictions. Therefore, you can typically display it on a private website without legal issues.
-```
+
 
 :::{.callout-tip}
 * [more on Guernica](https://www.pablopicasso.org/guernica.jsp)

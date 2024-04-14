@@ -7,7 +7,7 @@ categories: [why]
 
 ![](Pablo_Guernica.jpg)
 
-```
+```bash
 test
 ```
 

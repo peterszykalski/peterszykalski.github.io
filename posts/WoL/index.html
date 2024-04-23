@@ -160,17 +160,39 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p><img src="WoL_wire_interface.jpg" class="img-fluid"></p>
-<section id="imagine" class="level2">
-<h2 class="anchored" data-anchor-id="imagine">Imagine</h2>
-<p>Let’s suppose you are on a delegation equipped with your handy laptop but suddenly you need access to the data from recent project residing on your main desktop at your homeLAB. Moreover, the issue is the energy. You don’t want to warm up the atmosphere or waste energy in vain for a computer that is in use just for few minutes. So what to do? First, you need to connect to your local or office (that is not the issue of this post) network then you need to trigger the switch button to turn on your computer. But the hell! How you can to that remotely? The answer is the “Wake-on-Lan” mechanism.</p>
+<section id="imagine" class="level3">
+<h3 class="anchored" data-anchor-id="imagine">Imagine</h3>
+<p>Let’s suppose you are on a delegation equipped with your handy laptop but suddenly you need access to the data from recent project residing on your main desktop at your homeLAB. Moreover, the issue is the energy. You don’t want to warm up the atmosphere or waste energy in vain for a computer tha is in use just for few minutes. So what to do? First, you need to connect to your local or office (that is not the issue of this post) network then you need to trigger the switch button to turn on your computer. But the hell! How you can to that remotely? The answer is the “Wake-on-Lan” mechanism.</p>
+</section>
 <section id="wol-in-short" class="level3">
 <h3 class="anchored" data-anchor-id="wol-in-short">WoL in short</h3>
 <p>For short Wake-on-LAN (WoL) is a feature in which a PHY network card in a very low power state can be awakened by a host using a uniquely formatted packet called a magic packet. This requires decoding a magic packet and alerting a board controller by asserting an interrupt pin when a packet match is detected - this will start your computer. How this happens? Install wakeonlan tool and then execute the command. This command sends famous “magic packet”.</p>
 <p><code>sudo wakeonlan [$mac_address of computer you want to wakeUP]</code> <code>Sending magic packet to 255.255.255.255:9 with [$mac_address]</code></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>It is a wired network interface case. On a wifi network interface, WoL can be enabled too but slightly different.</p>
+</div>
+</div>
+</section>
+<section id="but-before" class="level3">
+<h3 class="anchored" data-anchor-id="but-before">but before</h3>
+<p>The basic requirement is to have the WoL functionality enabled in UEFI. This option needs to be enabled: <code>PCIe Device Power On</code><br>
+Having that, WoL needs to be enabled in Linux kernel. Ethtool will be indispensable in order to verify this. Execute:</p>
+<p><code>sudo ethtool [your active network intefrace name]</code> if in the output you see this line: <code>Wake-on: g</code> you are good if you see this: <code>Wake-on: d</code> execute the command: <code>ethtool -s %i wol g</code> where <code>i%</code> is the name of your active network interface. Now you are ready to wake up your computer remotely but only once. After you start your computer again the procedure needs to be repeated. Yeap, you need to automate this and do this persistent every time you turn on a computer.</p>
+</section>
+<section id="wol-persistent" class="level3">
+<h3 class="anchored" data-anchor-id="wol-persistent">WoL persistent</h3>
 <p>in progress …</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

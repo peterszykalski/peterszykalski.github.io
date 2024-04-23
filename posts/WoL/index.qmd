@@ -10,6 +10,10 @@ categories:
 
 ![](WoL_wire_interface.jpg)
 
+## Imagine
+Let's suppose you are on a delegation equipped with your handy laptop but suddenly you need access to the data from recent project residing on your main desktop at your homeLAB. Moreover, the issue is the energy. You don't want to warm up the atmosphere or waste energy in vain for a computer that is in use just for few minutes. 
+So what to do? First, you need to connect to your local or office (that is not the issue of this post) network then you need to trigger the switch button to turn on your computer. But the hell! How you can to that remotely? The answer is the "Wake-on-Lan" mechanism. 
+
 ### WoL in short
 For short Wake-on-LAN (WoL) is a feature in which a PHY network card in a very low power state can be awakened by a host using a uniquely formatted packet called a magic packet. This requires decoding a magic packet and alerting a board controller by asserting an interrupt pin when a packet match is detected - this will start your computer.
 How this happens? 

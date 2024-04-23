@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Peter Szykalski">
-<meta name="dcterms.date" content="2024-03-25">
+<meta name="dcterms.date" content="2024-04-23">
 
-<title>- from Support to Development</title>
+<title>- make WoL persistent</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -41,9 +41,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -121,9 +118,11 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">from Support to Development</h1>
+      <h1 class="title">make WoL persistent</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">callOUT</div>
+                <div class="quarto-category">arch_Linux</div>
+                <div class="quarto-category">bash</div>
+                <div class="quarto-category">homeLAB</div>
               </div>
                   </div>
   </div>
@@ -141,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">March 25, 2024</p>
+        <p class="date">April 23, 2024</p>
       </div>
     </div>
     
@@ -160,50 +159,12 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="GE_Chicago.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1" title="GE team Chciago"><img src="GE_Chicago.jpg" class="img-fluid figure-img" alt="GE team Chciago"></a></p>
-<figcaption>GE team Chciago</figcaption>
-</figure>
-</div>
-<section id="landscape-back-then" class="level3">
-<h3 class="anchored" data-anchor-id="landscape-back-then">landscape back then</h3>
-<p>W istotny sposób zmienił się krajobraz technologiczny od czasu gdy powstało to pamiątkowe zdjęcie. Okoliczności to siedziba GE Transportation, 24 piętro wieżowca 500 W Monroe St, Chicago.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="chicago_skyscraper.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" data-glightbox="description: .lightbox-desc-2" title="GE skyscraper"><img src="chicago_skyscraper.jpg" class="img-fluid figure-img" alt="GE skyscraper"></a></p>
-<figcaption>GE skyscraper</figcaption>
-</figure>
-</div>
-<p>Moja firma jako polski podwykonawca wdrażała komponent IoT dla platformy o marketingowej nazwie <a href="https://www.ge.com/digital/documentation/edge-software/c_what_is_predix_platform.html">Predix</a>. Ten z kolei Predix był częścią większego projektu <a href="https://www.wabteccorp.com/digital-intelligence/electronics-and-components/edgelinc">EdgeLINC™</a> autonomizującego sterowanie oraz odczyt stanu większości parametrów eksploatacyjnych Lokomowty Cargo. Był&nbsp;to rodzaj czarnej skrzynki ,która rejestrowała status lokomotywy oraz komunikowała się z Chmurą. Główny stack technologiczny stanowiła Java na edge’u oraz na cloud backendzie ulubione środowisko dużych corpo. Dziś trudno powiedzieć co pozostało z tego projektu produkcyjnie, ale niewątpliwie była to okazja, żeby live przekonać się o wadach i zaletach różnych decyzji architektonicznych w tak dużym projekcie. Kontenery? pozostały, wówczas to był jeszcze Docker_Swarm dziś powszechny jest Kubernetes. Kafka - message broker zdaje się, że nadal w wielu systemach dużych firm to dominujące rozwiązanie. Z punktu widzenia roli jaką wówczas pełniłem, Support Enginer’a to było cenne doświadczenie. Utrzymanie “operacyjne” cykli wydań od Zespołu Developerskiego w Katowicach po instalację i uruchomienie kolejnych wersji na środowisku u Klienta wraz wieloma komponentami 3th-party stanowiło wyzwanie.</p>
-</section>
-<section id="migration-to-development" class="level3">
-<h3 class="anchored" data-anchor-id="migration-to-development">migration to development</h3>
-<p>Obecnie po tych kilku latach od tego projektu oraz po kilku kolejnych równie intersujących projektach gównie z branży IIoT narast chęć bardziej kreatywnego wypływania na powierzone obowiązki - a więc “from Support to DEVelopment” idąc dalej “to Rust Development”. Dlaczego? Powodów jest wiele dlaczego warto przygodę z językiem Rust zacząć. Oto kilka z nich być może najbardziej spektakularnych:</p>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Rust_for_Linux">Linux introduces support for rust</a></li>
-<li><a href="https://aws.amazon.com/about-aws/whats-new/2023/11/aws-sdk-rust/">AWS announces general availability of the AWS SDK for Rust</a></li>
-<li><a href="https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/3608324/us-and-international-partners-issue-recommendations-to-secure-software-products/">NSA memory save roadmap</a></li>
-</ul>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Programming languages such as C and C++ are examples of memory unsafe programming languages that can lead to memory unsafe code and are still among the most widely used languages today.</p>
-</div>
-</div>
+<p><img src="WoL_wire_interface.jpg" class="img-fluid"></p>
+<section id="wol-in-short" class="level3">
+<h3 class="anchored" data-anchor-id="wol-in-short">WoL in short</h3>
+<p>For short Wake-on-LAN (WoL) is a feature in which a PHY network card in a very low power state can be awakened by a host using a uniquely formatted packet called a magic packet. This requires decoding a magic packet and alerting a board controller by asserting an interrupt pin when a packet match is detected - this will start your computer. How this happens? Install wakeonlan tool and then execute the command. This command sends famous “magic packet”. <code>sudo wakeonlan [$mac_address of computer you want to wakeUP]</code> <code>Sending magic packet to 255.255.255.255:9 with [$mac_address]</code></p>
 
 
-<div class="hidden" aria-hidden="true">
-<span class="glightbox-desc lightbox-desc-1">GE team Chciago</span>
-<span class="glightbox-desc lightbox-desc-2">GE skyscraper</span>
-</div>
 </section>
 
 </main> <!-- /main -->
@@ -617,31 +578,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom"});
-window.onload = () => {
-  lightboxQuarto.on('slide_before_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    const href = trigger.getAttribute('href');
-    if (href !== null) {
-      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-      if (imgEl !== null) {
-        const srcAttr = imgEl.getAttribute("src");
-        if (srcAttr && srcAttr.startsWith("data:")) {
-          slideConfig.href = srcAttr;
-        }
-      }
-    } 
-  });
-
-  lightboxQuarto.on('slide_after_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    if (window.Quarto?.typesetMath) {
-      window.Quarto.typesetMath(slideNode);
-    }
-  });
-
-};
-          </script>
 
 
 

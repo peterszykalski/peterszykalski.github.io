@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "polymorphic_blog",
+    "section": "",
+    "text": "make WoL persistent\n\n\n\n\n\n\narch_Linux\n\n\nbash\n\n\nhomeLAB\n\n\n\n\n\n\n\n\n\nApr 23, 2024\n\n\nPeter Szykalski\n\n\n\n\n\n\n\n\n\n\n\n\nfrom Support to Development\n\n\n\n\n\n\ncallOUT\n\n\n\n\n\n\n\n\n\nMar 25, 2024\n\n\nPeter Szykalski\n\n\n\n\n\n\n\n\n\n\n\n\nGuernica as a header\n\n\n\n\n\n\nwhy\n\n\n\n\n\n\n\n\n\nFeb 28, 2024\n\n\nPeter Szykalski\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/WoL/index.html",
+    "href": "posts/WoL/index.html",
+    "title": "make WoL persistent",
+    "section": "",
+    "text": "WoL in short\nFor short Wake-on-LAN (WoL) is a feature in which a PHY network card in a very low power state can be awakened by a host using a uniquely formatted packet called a magic packet. This requires decoding a magic packet and alerting a board controller by asserting an interrupt pin when a packet match is detected - this will start your computer. How this happens? Install wakeonlan tool and then execute the command. This command sends famous “magic packet”. sudo wakeonlan [$mac_address of computer you want to wakeUP] Sending magic packet to 255.255.255.255:9 with [$mac_address]"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -7,24 +21,17 @@
     "text": "Hi I’m Peter Szykalski.This blog aims to be the showcase of my interests, so not just technological but also other shades of my live. (…) Time will be critical in what is presented here so don’t be discouraged right at the begining. Visit this space from time to time - Cheers."
   },
   {
-    "objectID": "posts/my-header/index.html",
-    "href": "posts/my-header/index.html",
-    "title": "Guernica as a header",
-    "section": "",
-    "text": "Guernica by Pablo Picasso\nI always make lough that Pablo knew sth more about coming digital IT revolution hence he invented the Cubism. Here in Guernica from 1937, Cubism sought to depict subjects from multiple viewpoints simultaneously, breaking them down into geometric shapes and fragments. While “Guernica” does bear elements of Cubism, it also incorporates elements of Surrealism due to its dreamlike and symbolic imagery.\nAnyway, the painting pictures the Spanish Civil War from the beginning of the 20th-century, which I didn’t know after I saw this picture for the first time. But right away this piece of art spoke to me as a metaphor for nowadays. Electricity was entering Europe this time, so the lightbulb was on the canvas - the light of progress. Today with the .ai hype is similar ;). Although in many places we live in peace, everybody fights their own battle with surrounding circumstances, weaknesses, and so on.\nJust for fun I put the Guernica on Linkedin header. This raised my question, Is this legal? As it turns out linkedIN, checked the copyright under the hood and the header was not disabled. But for double check, I asked the chat GPT. Here is the answer: As of my last update in January 2022, “Guernica” by Pablo Picasso is in the public domain, which means it is not subject to copyright restrictions. Therefore, you can typically display it on a private website without legal issues.\n\n\n\n\n\n\nTip\n\n\n\n\nmore on Guernica"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "polymorphic_blog",
-    "section": "",
-    "text": "from Support to Development\n\n\n\n\n\n\ncallOUT\n\n\n\n\n\n\n\n\n\nMar 25, 2024\n\n\nPeter Szykalski\n\n\n\n\n\n\n\n\n\n\n\n\nGuernica as a header\n\n\n\n\n\n\nwhy\n\n\n\n\n\n\n\n\n\nFeb 28, 2024\n\n\nPeter Szykalski\n\n\n\n\n\n\nNo matching items"
-  },
-  {
     "objectID": "posts/my-first-post/index.html",
     "href": "posts/my-first-post/index.html",
     "title": "from Support to Development",
     "section": "",
     "text": "GE team Chciago\n\n\n\nlandscape back then\nW istotny sposób zmienił się krajobraz technologiczny od czasu gdy powstało to pamiątkowe zdjęcie. Okoliczności to siedziba GE Transportation, 24 piętro wieżowca 500 W Monroe St, Chicago.\n\n\n\nGE skyscraper\n\n\nMoja firma jako polski podwykonawca wdrażała komponent IoT dla platformy o marketingowej nazwie Predix. Ten z kolei Predix był częścią większego projektu EdgeLINC™ autonomizującego sterowanie oraz odczyt stanu większości parametrów eksploatacyjnych Lokomowty Cargo. Był to rodzaj czarnej skrzynki ,która rejestrowała status lokomotywy oraz komunikowała się z Chmurą. Główny stack technologiczny stanowiła Java na edge’u oraz na cloud backendzie ulubione środowisko dużych corpo. Dziś trudno powiedzieć co pozostało z tego projektu produkcyjnie, ale niewątpliwie była to okazja, żeby live przekonać się o wadach i zaletach różnych decyzji architektonicznych w tak dużym projekcie. Kontenery? pozostały, wówczas to był jeszcze Docker_Swarm dziś powszechny jest Kubernetes. Kafka - message broker zdaje się, że nadal w wielu systemach dużych firm to dominujące rozwiązanie. Z punktu widzenia roli jaką wówczas pełniłem, Support Enginer’a to było cenne doświadczenie. Utrzymanie “operacyjne” cykli wydań od Zespołu Developerskiego w Katowicach po instalację i uruchomienie kolejnych wersji na środowisku u Klienta wraz wieloma komponentami 3th-party stanowiło wyzwanie.\n\n\nmigration to development\nObecnie po tych kilku latach od tego projektu oraz po kilku kolejnych równie intersujących projektach gównie z branży IIoT narast chęć bardziej kreatywnego wypływania na powierzone obowiązki - a więc “from Support to DEVelopment” idąc dalej “to Rust Development”. Dlaczego? Powodów jest wiele dlaczego warto przygodę z językiem Rust zacząć. Oto kilka z nich być może najbardziej spektakularnych:\n\nLinux introduces support for rust\nAWS announces general availability of the AWS SDK for Rust\nNSA memory save roadmap\n\n\n\n\n\n\n\nNote\n\n\n\nProgramming languages such as C and C++ are examples of memory unsafe programming languages that can lead to memory unsafe code and are still among the most widely used languages today.\n\n\n\n\n\nGE team Chciago\nGE skyscraper"
+  },
+  {
+    "objectID": "posts/my-header/index.html",
+    "href": "posts/my-header/index.html",
+    "title": "Guernica as a header",
+    "section": "",
+    "text": "Guernica by Pablo Picasso\nI always make lough that Pablo knew sth more about coming digital IT revolution hence he invented the Cubism. Here in Guernica from 1937, Cubism sought to depict subjects from multiple viewpoints simultaneously, breaking them down into geometric shapes and fragments. While “Guernica” does bear elements of Cubism, it also incorporates elements of Surrealism due to its dreamlike and symbolic imagery.\nAnyway, the painting pictures the Spanish Civil War from the beginning of the 20th-century, which I didn’t know after I saw this picture for the first time. But right away this piece of art spoke to me as a metaphor for nowadays. Electricity was entering Europe this time, so the lightbulb was on the canvas - the light of progress. Today with the .ai hype is similar ;). Although in many places we live in peace, everybody fights their own battle with surrounding circumstances, weaknesses, and so on.\nJust for fun I put the Guernica on Linkedin header. This raised my question, Is this legal? As it turns out linkedIN, checked the copyright under the hood and the header was not disabled. But for double check, I asked the chat GPT. Here is the answer: As of my last update in January 2022, “Guernica” by Pablo Picasso is in the public domain, which means it is not subject to copyright restrictions. Therefore, you can typically display it on a private website without legal issues.\n\n\n\n\n\n\nTip\n\n\n\n\nmore on Guernica"
   }
 ]

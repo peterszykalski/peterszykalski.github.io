@@ -1,0 +1,18 @@
+---
+title: "make WoL persistent"
+author: "Peter Szykalski"
+date: "2024-04-23"
+categories:
+  - arch_Linux
+  - bash
+  - homeLAB
+---
+
+![](WoL_wire_interface.jpg)
+
+### WoL in short
+For short Wake-on-LAN (WoL) is a feature in which a PHY network card in a very low power state can be awakened by a host using a uniquely formatted packet called a magic packet. This requires decoding a magic packet and alerting a board controller by asserting an interrupt pin when a packet match is detected - this will start your computer.
+How this happens? 
+Install wakeonlan tool and then execute the command. This command sends famous "magic packet". 
+`sudo wakeonlan [$mac_address of computer you want to wakeUP]`
+`Sending magic packet to 255.255.255.255:9 with [$mac_address]`

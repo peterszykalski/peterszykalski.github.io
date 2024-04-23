@@ -238,9 +238,13 @@ Having that, WoL needs to be enabled in Linux kernel. Ethtool will be indispensa
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="ex">[Install]</span></span>
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="va">WantedBy</span><span class="op">=</span>multi-user.target</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Next enable the service: <code>sudo systemctl enable wol@enp1s0.service</code> where `enp1s0 replace with your name for the network card</p>
+<p>Next enable the service: <code>sudo systemctl enable wol@enp1s0.service</code> where <code>enp1s0</code> replace with your name for the network card</p>
 <p>Next start the service: <code>sudo systemctl start wol@enp1s0.service</code></p>
-<p>in progress …</p>
+<p>Almost done but after the reboot, service still not triggers <code>Wake-on: g</code> on your network interface? Here is the catch: TLP - subsytem optimizing Linux laptop battery life. Sounds funny because I’m not on a laptop, and batter life doesn’t matter in this case. Any way TLP is installed by default. Now, what needs to be done? Go to: <code>/etc/tlp.conf</code> and add the line there:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="va">WOL_DISABLE</span><span class="op">=</span>N </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="section" class="level3">
+<h3 class="anchored" data-anchor-id="section"></h3>
 
 
 </section>

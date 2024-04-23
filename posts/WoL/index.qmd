@@ -58,13 +58,24 @@ WantedBy=multi-user.target
 ```
 Next enable the service: 
 `sudo systemctl enable wol@enp1s0.service`
-where `enp1s0 replace with your name for the network card
+where `enp1s0` replace with your name for the network card
 
 Next start the service:
 `sudo systemctl start wol@enp1s0.service`
 
+Almost done but after the reboot, service still not triggers ```Wake-on: g``` on your network interface?
+Here is the catch: TLP - subsytem optimizing Linux laptop battery life. 
+Sounds funny because I'm not on a laptop, and batter life doesn't matter in this case.
+Any way TLP is installed by default. 
+Now, what needs to be done? Go to:  ```/etc/tlp.conf``` and add the line there:
+
+```bash  
+WOL_DISABLE=N 
+``` 
 
 
 
 
-in progress ...
+ 
+
+### 

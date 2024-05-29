@@ -1,0 +1,18 @@
+---
+title: "quote of the day" 
+author: "Peter Szykalsk"
+date: "2024-05-10"
+categories: [tip]
+---
+
+![](flybuck_electronics.jpg)
+
+### Quote of the dat
+
+```bash
+In thoery: The difference between theory and practice is slight.
+In practice: The difference between theory and practice is enourmous.
+```
+
+
+That is why there are prototypes. And that is why the Mark II is always better than the first prototype.

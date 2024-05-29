@@ -1,26 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "polymorphic_blog",
-    "section": "",
-    "text": "make WoL persistent\n\n\n\n\n\n\narch_Linux\n\n\nbash\n\n\nhomeLAB\n\n\n\n\n\n\n\n\n\nApr 23, 2024\n\n\nPeter Szykalski\n\n\n\n\n\n\n\n\n\n\n\n\nfrom Support to Development\n\n\n\n\n\n\ncallOUT\n\n\n\n\n\n\n\n\n\nMar 25, 2024\n\n\nPeter Szykalski\n\n\n\n\n\n\n\n\n\n\n\n\nGuernica as a header\n\n\n\n\n\n\nwhy\n\n\n\n\n\n\n\n\n\nFeb 28, 2024\n\n\nPeter Szykalski\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/WoL/index.html",
-    "href": "posts/WoL/index.html",
-    "title": "make WoL persistent",
-    "section": "",
-    "text": "Imagine\nLet’s suppose you are on a delegation equipped with your handy laptop but suddenly you need access to the data from recent project residing on your main desktop at your homeLAB. Moreover, the issue is the energy. You don’t want to warm up the atmosphere or waste energy in vain for a computer tha is in use just for few minutes. So what to do? First, you need to connect to your local or office (that is not the issue of this post) network then you need to trigger the switch button to turn on your computer. But the hell! How you can to that remotely? The answer is the “Wake-on-Lan” mechanism.\n\n\nWoL in short\nFor short Wake-on-LAN (WoL) is a feature in which a PHY network card in a very low power state can be awakened by a host using a uniquely formatted packet called a magic packet. This requires decoding a magic packet and alerting a board controller by asserting an interrupt pin when a packet match is detected - this will start your computer. How this happens? Install wakeonlan tool and then execute the command. This command sends famous “magic packet”.\nsudo wakeonlan [$mac_address of computer you want to wakeUP] Sending magic packet to 255.255.255.255:9 with [$mac_address]\n\n\n\n\n\n\nNote\n\n\n\nIt is a wired network interface case. On a wifi network interface, WoL can be enabled too but slightly different.\n\n\n\n\nbut before\nThe basic requirement is to have the WoL functionality enabled in UEFI. This option needs to be enabled: PCIe Device Power On\nHaving that, WoL needs to be enabled in Linux kernel. Ethtool will be indispensable in order to verify this. Execute:\nsudo ethtool [your active network intefrace name] if in the output you see this line: Wake-on: g you are good if you see this: Wake-on: d execute the command: ethtool -s %i wol g where i% is the name of your active network interface. Now you are ready to wake up your computer remotely but only once. After you start your computer again the procedure needs to be repeated. Yeap, you need to automate this and do this persistent every time you turn on a computer.\n\n\nWoL persistent\ngo to: /etc/systemd/system use sudo and touch the file wol@.service and put into what follows:\n[Unit]\nDescription=Wake-on-LAN for %i\nRequires=network.target\nAfter=network.target network-online.target\n\n[Service]\nRestart=on-failure\nRestartSec=10s\nExecStart=/usr/bin/ethtool -s %i wol g\nType=simple\n\n[Install]\nWantedBy=multi-user.target\nNext enable the service: sudo systemctl enable wol@enp1s0.service where enp1s0 replace with your name for the network card\nNext start the service: sudo systemctl start wol@enp1s0.service\nAlmost done but after the reboot, service still not triggers Wake-on: g on your network interface? Here is the catch: TLP - subsytem optimizing Linux laptop battery life. Sounds funny because I’m not on a laptop, and batter life doesn’t matter in this case. Any way TLP is installed by default. Now, what needs to be done? Go to: /etc/tlp.conf and add the line there:\nWOL_DISABLE=N"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "Hi! I’m Peter.This blog aims to be the showcase of my interests, so not just technological but also other shades of my live. (…) Time will be critical in what is presented here so don’t be discouraged right at the begining. Visit this space from time to time - Cheers."
-  },
-  {
     "objectID": "posts/my-first-post/index.html",
     "href": "posts/my-first-post/index.html",
     "title": "from Support to Development",
@@ -33,5 +12,33 @@
     "title": "Guernica as a header",
     "section": "",
     "text": "Guernica by Pablo Picasso\nI always make lough that Pablo knew sth more about coming digital IT revolution hence he invented the Cubism. Here in Guernica from 1937, Cubism sought to depict subjects from multiple viewpoints simultaneously, breaking them down into geometric shapes and fragments. While “Guernica” does bear elements of Cubism, it also incorporates elements of Surrealism due to its dreamlike and symbolic imagery.\nAnyway, the painting pictures the Spanish Civil War from the beginning of the 20th-century, which I didn’t know after I saw this picture for the first time. But right away this piece of art spoke to me as a metaphor for nowadays. Electricity was entering Europe this time, so the lightbulb was on the canvas - the light of progress. Today with the .ai hype is similar ;). Although in many places we live in peace, everybody fights their own battle with surrounding circumstances, weaknesses, and so on.\nJust for fun I put the Guernica on Linkedin header. This raised my question, Is this legal? As it turns out linkedIN, checked the copyright under the hood and the header was not disabled. But for double check, I asked the chat GPT. Here is the answer: As of my last update in January 2022, “Guernica” by Pablo Picasso is in the public domain, which means it is not subject to copyright restrictions. Therefore, you can typically display it on a private website without legal issues.\n\n\n\n\n\n\nTip\n\n\n\n\nmore on Guernica"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "polymorphic_blog",
+    "section": "",
+    "text": "quote of the day No.1\n\n\n\n\n\n\ntip\n\n\n\n\n\n\n\n\n\nMay 10, 2024\n\n\nPeter Szykalsk\n\n\n\n\n\n\n\n\n\n\n\n\nmake WoL persistent\n\n\n\n\n\n\narch_Linux\n\n\nbash\n\n\nhomeLAB\n\n\n\n\n\n\n\n\n\nApr 23, 2024\n\n\nPeter Szykalski\n\n\n\n\n\n\n\n\n\n\n\n\nfrom Support to Development\n\n\n\n\n\n\ncallOUT\n\n\n\n\n\n\n\n\n\nMar 25, 2024\n\n\nPeter Szykalski\n\n\n\n\n\n\n\n\n\n\n\n\nGuernica as a header\n\n\n\n\n\n\nwhy\n\n\n\n\n\n\n\n\n\nFeb 28, 2024\n\n\nPeter Szykalski\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Hi! I’m Peter.This blog aims to be the showcase of my interests, so not just technological but also other shades of my live. (…) Time will be critical in what is presented here so don’t be discouraged right at the begining. Visit this space from time to time - Cheers."
+  },
+  {
+    "objectID": "posts/power_buck/index.html",
+    "href": "posts/power_buck/index.html",
+    "title": "quote of the day No.1",
+    "section": "",
+    "text": "Quote of the day\nIn thoery: The difference between theory and practice is slight.\nIn practice: The difference between theory and practice is enourmous.\nThat is why there are prototypes. And that is why the Mark II is always better than the first prototype."
+  },
+  {
+    "objectID": "posts/WoL/index.html",
+    "href": "posts/WoL/index.html",
+    "title": "make WoL persistent",
+    "section": "",
+    "text": "Imagine\nLet’s suppose you are on a delegation equipped with your handy laptop but suddenly you need access to the data from recent project residing on your main desktop at your homeLAB. Moreover, the issue is the energy. You don’t want to warm up the atmosphere or waste energy in vain for a computer tha is in use just for few minutes. So what to do? First, you need to connect to your local or office (that is not the issue of this post) network then you need to trigger the switch button to turn on your computer. But the hell! How you can to that remotely? The answer is the “Wake-on-Lan” mechanism.\n\n\nWoL in short\nFor short Wake-on-LAN (WoL) is a feature in which a PHY network card in a very low power state can be awakened by a host using a uniquely formatted packet called a magic packet. This requires decoding a magic packet and alerting a board controller by asserting an interrupt pin when a packet match is detected - this will start your computer. How this happens? Install wakeonlan tool and then execute the command. This command sends famous “magic packet”.\nsudo wakeonlan [$mac_address of computer you want to wakeUP] Sending magic packet to 255.255.255.255:9 with [$mac_address]\n\n\n\n\n\n\nNote\n\n\n\nIt is a wired network interface case. On a wifi network interface, WoL can be enabled too but slightly different.\n\n\n\n\nbut before\nThe basic requirement is to have the WoL functionality enabled in UEFI. This option needs to be enabled: PCIe Device Power On\nHaving that, WoL needs to be enabled in Linux kernel. Ethtool will be indispensable in order to verify this. Execute:\nsudo ethtool [your active network intefrace name] if in the output you see this line: Wake-on: g you are good if you see this: Wake-on: d execute the command: ethtool -s %i wol g where i% is the name of your active network interface. Now you are ready to wake up your computer remotely but only once. After you start your computer again the procedure needs to be repeated. Yeap, you need to automate this and do this persistent every time you turn on a computer.\n\n\nWoL persistent\ngo to: /etc/systemd/system use sudo and touch the file wol@.service and put into what follows:\n[Unit]\nDescription=Wake-on-LAN for %i\nRequires=network.target\nAfter=network.target network-online.target\n\n[Service]\nRestart=on-failure\nRestartSec=10s\nExecStart=/usr/bin/ethtool -s %i wol g\nType=simple\n\n[Install]\nWantedBy=multi-user.target\nNext enable the service: sudo systemctl enable wol@enp1s0.service where enp1s0 replace with your name for the network card\nNext start the service: sudo systemctl start wol@enp1s0.service\nAlmost done but after the reboot, service still not triggers Wake-on: g on your network interface? Here is the catch: TLP - subsytem optimizing Linux laptop battery life. Sounds funny because I’m not on a laptop, and batter life doesn’t matter in this case. Any way TLP is installed by default. Now, what needs to be done? Go to: /etc/tlp.conf and add the line there:\nWOL_DISABLE=N"
   }
 ]

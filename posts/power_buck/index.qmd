@@ -1,5 +1,5 @@
 ---
-title: "quote of the day" 
+title: "quote of the day No.1" 
 author: "Peter Szykalsk"
 date: "2024-05-10"
 categories: [tip]
@@ -7,7 +7,7 @@ categories: [tip]
 
 ![](flybuck_electronics.jpg)
 
-### Quote of the dat
+### Quote of the day
 
 ```bash
 In thoery: The difference between theory and practice is slight.

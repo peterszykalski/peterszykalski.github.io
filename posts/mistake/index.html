@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Peter Szykalski">
+<meta name="dcterms.date" content="2024-05-25">
 
-<title>- polymorphic_blog</title>
+<title>- not the biggest mistake</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,76 +68,18 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title"></span>
     </a>
   </div>
@@ -148,11 +90,11 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">polymorphic_blog</span></a>
   </li>  
   <li class="nav-item compact">
@@ -175,215 +117,58 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">polymorphic_blog</h1>
-                      </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">not the biggest mistake</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">comfort zone</div>
+              </div>
+                  </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Peter Szykalski </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">May 25, 2024</p>
+      </div>
+    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="arch_Linux">arch_Linux <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bash">bash <span class="quarto-category-count">(1)</span></div><div class="category" data-category="callOUT">callOUT <span class="quarto-category-count">(1)</span></div><div class="category" data-category="comfort zone">comfort zone <span class="quarto-category-count">(1)</span></div><div class="category" data-category="homeLAB">homeLAB <span class="quarto-category-count">(1)</span></div><div class="category" data-category="tip">tip <span class="quarto-category-count">(1)</span></div><div class="category" data-category="why">why <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
+<p><img src="pink_floyd.jpg" class="img-fluid"></p>
+<section id="the-question-why" class="level3">
+<h3 class="anchored" data-anchor-id="the-question-why">the question WHY?</h3>
+<p>After HR recruiters asked me why I have a half a year blank spot in my CV I decided to reveal the truth. On the first of October 2023, I started Physics studies faculty Photnics at the Warsaw University of Technology.</p>
+<p>My dream was to follow Niels Bohr’s footsteps but really, the power of Light convinced me. IMHO the discovery world right now is on the quantum level size where the light is the key player. The laser story is just amazing. 50 years after Einstein predicted the creation of such an instrument finally Theodore Maiman did it in 1960. It was just the beginning of the silent revolution, the next Big Thing after the transistor was discovered in 1942 by William Shockley with a team. Today it is even hard to imagine the World without the Lasers. Lasers are everywhere. Laser devices cut metal, are used in medicine and most important laser beams can transfer Information. An interesting example of laser usage is the femtosecond laser. Their beam is incredibly fast and powerful hence avoidance of thermal effect is possible, it is crucial when you influence with the beam on a substrate with the expectation of ultra-high precision and micro scale. The light has changed the telecommunications we know today and will be the main driver in this industry for the next fifty years, not only because of Fiber technology but of course because of lasers that right now are introduced in Outerspace communication for example gradually on new batches of Starlink satellites. Without the Optics, we won’t be able to speed up our next-generation processors, particularly AI processors. Some movements towards new technological breakthroughs happen in chip interconnections. An early explorer of this technology is Ayarlabs company showcasing 4 Tbps Optical FPGA Demo.</p>
+<p>So those are only a few reasons why I decided to study Photonics. Every kid on this lucky Planet called Earth knows that the Light it is a source of energy for every living plan or creature and is indispensable. Nevertheless, my plan to become the next photonic engineer has finished after half a year. Studies were possible only in full-day mode and I could not find a job that allowed me to share my scientific desire.</p>
+<p>Overall conclusions? It’s healthy to leave your comfort zone and try something else.</p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="comfort zone" data-listing-date-sort="1716595200000" data-listing-file-modified-sort="1717150989855" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="385">
-<div class="thumbnail">
-<p><a href="./posts/mistake/index.html" class="no-external"></a></p><a href="./posts/mistake/index.html" class="no-external">
-<p><img src="./posts/mistake/pink_floyd.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/mistake/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/mistake/index.html" class="no-external">not the biggest mistake</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/mistake/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('comfort zone'); return false;">
-comfort zone
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/mistake/index.html" class="no-external">After HR recruiters asked me why I have a half a year blank spot in my CV I decided to reveal the truth. On the first of October 2023, I started Physics studies faculty…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/mistake/index.html" class="no-external">
-<div class="listing-date">
-May 25, 2024
-</div>
-<div class="listing-author">
-Peter Szykalski
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="tip" data-listing-date-sort="1715299200000" data-listing-file-modified-sort="1717150989859" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="38">
-<div class="thumbnail">
-<p><a href="./posts/power_buck/index.html" class="no-external"></a></p><a href="./posts/power_buck/index.html" class="no-external">
-<p class="card-img-top"><img src="posts/power_buck/flybuck_electronics.jpg"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/power_buck/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/power_buck/index.html" class="no-external">quote of the day No.1</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/power_buck/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('tip'); return false;">
-tip
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/power_buck/index.html" class="no-external">That is why there are prototypes. And that is why the Mark II is always better than the first prototype.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/power_buck/index.html" class="no-external">
-<div class="listing-date">
-May 10, 2024
-</div>
-<div class="listing-author">
-Peter Szykalsk
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="arch_Linux,bash,homeLAB" data-listing-date-sort="1713830400000" data-listing-file-modified-sort="1717150989855" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="472">
-<div class="thumbnail">
-<p><a href="./posts/WoL/index.html" class="no-external"></a></p><a href="./posts/WoL/index.html" class="no-external">
-<p class="card-img-top"><img src="posts/WoL/WoL_wire_interface.jpg"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/WoL/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/WoL/index.html" class="no-external">make WoL persistent</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/WoL/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('arch_Linux'); return false;">
-arch_Linux
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('bash'); return false;">
-bash
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('homeLAB'); return false;">
-homeLAB
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/WoL/index.html" class="no-external">Let’s suppose you are on a delegation equipped with your handy laptop but suddenly you need access to the data from recent project residing on your main desktop at your…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/WoL/index.html" class="no-external">
-<div class="listing-date">
-Apr 23, 2024
-</div>
-<div class="listing-author">
-Peter Szykalski
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="callOUT" data-listing-date-sort="1711324800000" data-listing-file-modified-sort="1717150989855" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="294">
-<div class="thumbnail">
-<p><a href="./posts/my-first-post/index.html" class="no-external"></a></p><a href="./posts/my-first-post/index.html" class="no-external">
-<p><img src="./posts/my-first-post/GE_Chicago.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/my-first-post/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/my-first-post/index.html" class="no-external">from Support to Development</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/my-first-post/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('callOUT'); return false;">
-callOUT
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/my-first-post/index.html" class="no-external">W istotny sposób zmienił się krajobraz technologiczny od czasu gdy powstało to pamiątkowe zdjęcie. Okoliczności to siedziba GE Transportation, 24 piętro wieżowca 500 W…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/my-first-post/index.html" class="no-external">
-<div class="listing-date">
-Mar 25, 2024
-</div>
-<div class="listing-author">
-Peter Szykalski
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="why" data-listing-date-sort="1709078400000" data-listing-file-modified-sort="1717150989855" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="236">
-<div class="thumbnail">
-<p><a href="./posts/my-header/index.html" class="no-external"></a></p><a href="./posts/my-header/index.html" class="no-external">
-<p class="card-img-top"><img src="posts/my-header/Pablo_Guernica.jpg"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/my-header/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/my-header/index.html" class="no-external">Guernica as a header</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/my-header/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('why'); return false;">
-why
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/my-header/index.html" class="no-external">I always make lough that Pablo knew sth more about coming digital IT revolution hence he invented the Cubism. Here in Guernica from 1937, Cubism sought to depict subjects…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/my-header/index.html" class="no-external">
-<div class="listing-date">
-Feb 28, 2024
-</div>
-<div class="listing-author">
-Peter Szykalski
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

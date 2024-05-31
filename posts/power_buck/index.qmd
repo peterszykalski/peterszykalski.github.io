@@ -1,6 +1,6 @@
 ---
 title: "quote of the day No.1" 
-author: "Peter Szykalsk"
+author: "Peter Szykalski"
 date: "2024-05-10"
 categories: [tip]
 ---

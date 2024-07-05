@@ -1,5 +1,5 @@
 ---
-title: "why physics"
+title: "why Physics"
 author: "Peter Szykalski"
 date: "2024-05-25"
 categories: [comfort zone]

@@ -5,7 +5,7 @@ date: "2024-10-18"
 categories: [space]
 ---
 
-![](comet.jpg)
+![](cometa.jpg)
 
 ### the phone did the job
 

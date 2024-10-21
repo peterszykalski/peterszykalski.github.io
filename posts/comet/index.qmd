@@ -1,0 +1,21 @@
+---
+title: "comet nearby" 
+author: "Peter Szykalski"
+date: "2024-10-18"
+categories: [space]
+---
+
+![](comet.jpg)
+
+### the phone did the job
+
+```bash
+Exposure time: 30 sec
+Aperture Value: 1.68EV (f/1.8)
+Focal Length: 4.7 mm
+Shutter Speed: 4.91 (1/30 sec)
+ISO Speed Ratings: 403
+```
+
+
+yyyy .

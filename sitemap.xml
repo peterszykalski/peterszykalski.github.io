@@ -1,31 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://peterszykalski.github.io/about.html</loc>
-    <lastmod>2024-07-05T09:32:49.546Z</lastmod>
+    <loc>https://peterszykalski.github.io/posts/comet/index.html</loc>
+    <lastmod>2024-10-21T08:54:19.239Z</lastmod>
   </url>
   <url>
     <loc>https://peterszykalski.github.io/posts/mistake/index.html</loc>
-    <lastmod>2024-07-05T09:32:49.546Z</lastmod>
-  </url>
-  <url>
-    <loc>https://peterszykalski.github.io/posts/WoL/index.html</loc>
-    <lastmod>2024-07-05T09:32:49.546Z</lastmod>
+    <lastmod>2024-10-21T08:54:19.239Z</lastmod>
   </url>
   <url>
     <loc>https://peterszykalski.github.io/posts/my-first-post/index.html</loc>
-    <lastmod>2024-07-05T09:32:49.550Z</lastmod>
-  </url>
-  <url>
-    <loc>https://peterszykalski.github.io/posts/my-header/index.html</loc>
-    <lastmod>2024-07-05T09:32:49.550Z</lastmod>
-  </url>
-  <url>
-    <loc>https://peterszykalski.github.io/posts/power_buck/index.html</loc>
-    <lastmod>2024-07-05T09:32:49.550Z</lastmod>
+    <lastmod>2024-10-21T08:54:19.239Z</lastmod>
   </url>
   <url>
     <loc>https://peterszykalski.github.io/index.html</loc>
-    <lastmod>2024-07-05T09:32:49.546Z</lastmod>
+    <lastmod>2024-10-21T08:54:19.235Z</lastmod>
+  </url>
+  <url>
+    <loc>https://peterszykalski.github.io/about.html</loc>
+    <lastmod>2024-10-21T08:54:19.235Z</lastmod>
+  </url>
+  <url>
+    <loc>https://peterszykalski.github.io/posts/WoL/index.html</loc>
+    <lastmod>2024-10-21T08:54:19.239Z</lastmod>
+  </url>
+  <url>
+    <loc>https://peterszykalski.github.io/posts/my-header/index.html</loc>
+    <lastmod>2024-10-21T08:54:19.243Z</lastmod>
+  </url>
+  <url>
+    <loc>https://peterszykalski.github.io/posts/power_buck/index.html</loc>
+    <lastmod>2024-10-21T08:54:19.243Z</lastmod>
   </url>
 </urlset>
